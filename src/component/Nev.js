@@ -1,46 +1,36 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink,Link} from "react-router-dom";
 export default function Nevbar(){
     return(
         <>
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-<<<<<<< HEAD
-                    <NavLink to="/"><a class="navbar-brand" href="#">Navbar</a></NavLink>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                        <li class="nav-item">
-                        {/* <Link href="#"><a>Home</a></Link> */}
-                        </li>
-                        <li class="nav-item">
-                            <NavLink to="dance"><a class="nav-link">dance</a></NavLink>
-                        </li>
-                        <li class="nav-item">
-=======
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="/logo192.png" alt="" width="30" height="24"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Dance">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
->>>>>>> adabb8914d4fc791c9c1f5a7e71461fbb9e7d672
-                        <a class="nav-link" href="#">Pricing</a>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <Link to="/"><a class="nav-link active">Home</a></Link>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                            <Link to="dance"><a class="nav-link active">Dance</a></Link>
                         </li>
-                        </ul>
-                    </div>
+                        <li class="nav-item">
+                            <Link to="/"><a class="nav-link disabled">Model</a></Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link to="/"><a class="nav-link disabled">Acting</a></Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link to="/"><a class="nav-link disabled">Voice</a></Link>
+                        </li>
+
+                    </ul>
+                </div>
                 </div>
             </nav>
         </>
