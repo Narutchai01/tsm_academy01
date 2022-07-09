@@ -3,15 +3,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Nevbar from './component/Nev';
 import Carousel from './component/Carousel';
+import { Route, Routes } from 'react-router-dom';
+import Dancepage from './Pages/Dancepage';
+import Homepage from './Pages/Homepage';
 
 function App() {
   return (
     <div className="App">
       <Nevbar/>
-      <Carousel/>
-      <div className='App-grid'>
-          <h2>อร่อย</h2>
-        </div>
+      <Routes>
+        <Route path="/" element={<Homepage/>} />
+        <Route path="dance" element={<Dancepage/>} />
+      </Routes>
     </div>
   );
 }
