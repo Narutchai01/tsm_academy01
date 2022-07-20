@@ -1,40 +1,27 @@
 import React from "react";
-import {NavLink,Link} from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link } from "react-router-dom";
+
+
 export default function Nevbar(){
     return(
         <>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container">
-                    <Link to="/">
-                        <a class="navbar-brand">
-                            <img src="/logo192.png" alt="" width="30" height="24"/>
-                        </a>
-                    </Link>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <Link to="/"><a class="nav-link active">Home</a></Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link to="dance"><a class="nav-link active">Dance</a></Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link to="/"><a class="nav-link disabled">Model</a></Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link to="/"><a class="nav-link disabled">Acting</a></Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link to="/"><a class="nav-link disabled">Voice</a></Link>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <Navbar bg="dark" expand="lg"  variant="dark">
+                <Container>
+                    <Navbar.Brand href="/">TSM Academy</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ms-auto">
+                            <Nav.Link as={Link} to="dance">Dance</Nav.Link>
+                            <Nav.Link as={Link} to="dance" disabled>Model</Nav.Link>
+                            <Nav.Link as={Link} to="dance" disabled>Acting</Nav.Link>
+                            <Nav.Link as={Link} to="dance" disabled>Voice</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </>
     )
 }
