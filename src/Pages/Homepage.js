@@ -8,6 +8,5 @@ export default function Homepage(){
         <div className='App-grid'>
         </div>
         </>
-       
     )
 }

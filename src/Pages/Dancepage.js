@@ -1,4 +1,4 @@
-import './Dancepage.css'
+import '../style/Dancepage.css'
 
 export default function Dancepage() {
     return (
