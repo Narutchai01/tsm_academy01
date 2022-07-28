@@ -6,8 +6,8 @@ import dataclassrooms from "../Data/fourClass"
 
 export default function Homepage(){
 
-    const dataElement = dataclassrooms.map((data, index) =>{
-        return <Cardhomepade key={index} data={data} />;
+    const dataElement = dataclassrooms.map((data) =>{
+        return <Cardhomepade title={data.title} testsomeone={data.testsomeome} imgURL={data.imgURL} />;
     })
 
     return(
