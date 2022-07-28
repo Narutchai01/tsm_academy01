@@ -1,6 +1,6 @@
-import '../style/Dancepage.css'
+import '../style/Aboutpage.css'
 
-export default function Dancepage() {
+export default function Aboutpage() {
     return (
         <div>
             <div className='main-header -banner'>
