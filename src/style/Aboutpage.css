@@ -51,9 +51,14 @@
         -ms-flex-pack: center;
         justify-content: center;
     }
-    .main-content {
-        margin-bottom: 15px;
-        padding-top: 10px;
-        padding-left: 310px;
-        padding-right: 310px;
+    
+    .text-learn {
+        height: 250px;
+        width: 400px;
+    }
+   
+    .text-bg {
+        text-align: justify;
+        margin-left: 20px;
+        
     }
